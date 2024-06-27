@@ -1,18 +1,112 @@
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  input, button, textarea, select {
-    font-family: inherit;
-  }
-  
-  a, button {
-    cursor: pointer;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.section__title {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 133%;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+}
+
+.section__paragraph {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 171%;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.logo {
+  width: 238px;
+  height: auto;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation__link {
+  font-family: "Staatliches", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 125%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.header__language {
+  font-family: "Tourney", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 81%;
+}
+
+.header__container--lang-and-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.title__chapter {
+  font-family: "Farro", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: none;
+}
+
+.link {
+  color: rgba(0, 0, 0, 1);
+}
+
+code {
+  background: rgba(218, 218, 218, 1);
+}

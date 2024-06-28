@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>HW - Position Konstrukt</title>
   </head>
   <body>
     <header class="header">
@@ -30,130 +30,186 @@
               </li>
               <li><p class="navigation__link">/</p></li>
               <li class="navigation__item">
-                <a href="" class="navigation__link"> Who's using </a>
+                <a href="who-is-using/index.html" class="navigation__link">
+                  Who's using
+                </a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
     <main class="main">
-      <article class="article">
-        <section class="section section--introduction">
-          <div class="container">
-            <h2 class="section__title">
-              Introduction<sup class="title__chapter">Chapter 1</sup>
-            </h2>
-
-            <p class="section__paragraph">
-              Welcome to the very start of your React Native journey! If you're
-              looking for environment setup instructions, they've moved to
-              <a href="" class="link">their own section</a>. Continue reading
-              for an introduction to the documentation, Native Components,
-              React, and more!
-            </p>
-          </div>
-        </section>
-
-        <section class="section section--core-components">
-          <div class="container">
-            <h2 class="section__title">
-              core components<sup class="title__chapter">Chapter 2</sup>
-            </h2>
-
-            <p class="section__paragraph">
-              React Native is an open source framework for building Android and
-              iOS applications using React and the app platform’s native
-              capabiles. With React Native, you use JavaScript to access your
-              platform’s APIs as well as to describe the appearance and behavior
-              of your UI using React components:
-              <i>bundles of reusable, nestable code</i>. You can learn more
-              about React in the next section. But first, let’s cover how
-              components work in React Native.
-            </p>
-          </div>
-        </section>
-
-        <section class="section section--react-fundamentals">
-          <div class="container">
-            <h2 class="section__title">
-              react fundamentals<sup class="title__chapter">Chapter 3</sup>
-            </h2>
-
-            <p class="section__paragraph">
-              React Native runs on
-              <a href="https://react.dev/" class="link">React</a>, a popular
-              open source library for building user interfaces with JavaScript.
-              To make the most of React Native, it helps to understand React
-              itself. This section can get you started or can serve as a
-              refresher course.
-            </p>
-            <p class="section__paragraph">
-              We’re going to cover the core concepts behind React:
-            </p>
-            <ul class="section__list">
-              <li class="section__item">
-                <p class="section__paragraph">
-                  <b>+ components.</b> The rest of this introduction to React
-                  uses cats in its examples: friendly, approachable creatures
-                  that need names and a cafe to work in.
-                </p>
+      <div class="main__container">
+        <div class="container--side-bar">
+          <nav class="navigation--side-bar">
+            <ul class="navigation__list--side-bar">
+              <li class="navigation__item--side-bar">
+                <a href="#introduction" class="navigation__link--side-bar">
+                  Introduction
+                </a>
               </li>
-              <li class="section__item">
-                <p class="section__paragraph">
-                  <b>+ JSX.</b> React and React Native use JSX, a syntax that
-                  lets you write elements inside JavaScript like so:
-                  <code>&#60;Text>Hello, I am your cat!&#60;/Text></code>.
-                </p>
-                <p class="section__paragraph">
-                  The React docs have
-                  <a href="" class="link">a comprehensive guide to JSX</a> you
-                  can refer to learn even more. Because JSX is JavaScript, you
-                  can use variables inside it. Here you are declaring a
-                  <code>name</code> for the cat, name, and embedding it with
-                  curly braces inside <code>&#60;Text></code>
-                </p>
+              <li class="navigation__item--side-bar">
+                <a href="#core-components" class="navigation__link--side-bar">
+                  core components
+                </a>
               </li>
-              <li class="section__item">
-                <p class="section__paragraph">
-                  <b>+ props.</b> Props is short for “properties”.
-                </p>
+              <li class="navigation__item--side-bar">
+                <a
+                  href="#react-fundamentals"
+                  class="navigation__link--side-bar"
+                >
+                  react fundamentals
+                </a>
               </li>
-              <li class="section__item">
-                <p class="section__paragraph">
-                  <b>+ state.</b> While you can think of props as arguments you
-                  use to configure how components render, state is like a
-                  component’s personal data storage. State is useful for
-                  handling data that changes over time or that comes from user
-                  interaction. State gives your components memory!
-                </p>
+              <li class="navigation__item--side-bar">
+                <a
+                  href="#handling-text-input"
+                  class="navigation__link--side-bar"
+                >
+                  handling text input
+                </a>
               </li>
             </ul>
-          </div>
-        </section>
+          </nav>
+        </div>
+        <article class="article">
+          <section class="section section--introduction">
+            <div class="container">
+              <img
+                class="section__divider"
+                src="../images/divider.svg"
+                alt="divider"
+              />
+              <h2 class="section__title" id="introduction">
+                Introduction<sup class="title__chapter">Chapter 1</sup>
+              </h2>
 
-        <section class="section section--handling-text-input">
-          <div class="container">
-            <h2 class="section__title">
-              handling text input<sup class="title__chapter">Chapter 4</sup>
-            </h2>
+              <p class="section__paragraph">
+                Welcome to the very start of your React Native journey! If
+                you're looking for environment setup instructions, they've moved
+                to
+                <a href="" class="link">their own section</a>. Continue reading
+                for an introduction to the documentation, Native Components,
+                React, and more!
+              </p>
+            </div>
+          </section>
 
-            <p class="section__paragraph">
-              TextInput is a Core Component that allows the user to enter text.
-              It has an onChangeText prop that takes a function to be called
-              every time the text changed, and an onSubmitEditing prop that
-              takes a function to be called when the text is submitted.
-            </p>
-            <p class="section__paragraph">
-              For example, let's say that as the user types, you're translating
-              their words into a different language. In this new language, every
-              single word is written the same way: 🍕. So the sentence "Hello
-              there Bob" would be translated as "🍕 🍕".
-            </p>
-          </div>
-        </section>
-      </article>
+          <section class="section section--core-components">
+            <div class="container">
+              <img
+                class="section__divider"
+                src="../images/divider.svg"
+                alt="divider"
+              />
+              <h2 class="section__title" id="core-components">
+                core components<sup class="title__chapter">Chapter 2</sup>
+              </h2>
+
+              <p class="section__paragraph">
+                React Native is an open source framework for building Android
+                and iOS applications using React and the app platform’s native
+                capabiles. With React Native, you use JavaScript to access your
+                platform’s APIs as well as to describe the appearance and
+                behavior of your UI using React components:
+                <i>bundles of reusable, nestable code</i>. You can learn more
+                about React in the next section. But first, let’s cover how
+                components work in React Native.
+              </p>
+            </div>
+          </section>
+
+          <section class="section section--react-fundamentals">
+            <div class="container">
+              <img
+                class="section__divider"
+                src="../images/divider.svg"
+                alt="divider"
+              />
+              <h2 class="section__title" id="react-fundamentals">
+                react fundamentals<sup class="title__chapter">Chapter 3</sup>
+              </h2>
+
+              <p class="section__paragraph">
+                React Native runs on
+                <a href="https://react.dev/" class="link">React</a>, a popular
+                open source library for building user interfaces with
+                JavaScript. To make the most of React Native, it helps to
+                understand React itself. This section can get you started or can
+                serve as a refresher course.
+              </p>
+              <p class="section__paragraph">
+                We’re going to cover the core concepts behind React:
+              </p>
+              <ul class="section__list">
+                <li class="section__item">
+                  <p class="section__paragraph">
+                    <b>+ components.</b> The rest of this introduction to React
+                    uses cats in its examples: friendly, approachable creatures
+                    that need names and a cafe to work in.
+                  </p>
+                </li>
+                <li class="section__item">
+                  <p class="section__paragraph">
+                    <b>+ JSX.</b> React and React Native use JSX, a syntax that
+                    lets you write elements inside JavaScript like so:
+                    <code>&#60;Text>Hello, I am your cat!&#60;/Text></code>.
+                  </p>
+                  <p class="section__paragraph">
+                    The React docs have
+                    <a href="" class="link">a comprehensive guide to JSX</a> you
+                    can refer to learn even more. Because JSX is JavaScript, you
+                    can use variables inside it. Here you are declaring a
+                    <code>name</code> for the cat, name, and embedding it with
+                    curly braces inside <code>&#60;Text></code>
+                  </p>
+                </li>
+                <li class="section__item">
+                  <p class="section__paragraph">
+                    <b>+ props.</b> Props is short for “properties”.
+                  </p>
+                </li>
+                <li class="section__item">
+                  <p class="section__paragraph">
+                    <b>+ state.</b> While you can think of props as arguments
+                    you use to configure how components render, state is like a
+                    component’s personal data storage. State is useful for
+                    handling data that changes over time or that comes from user
+                    interaction. State gives your components memory!
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="section section--handling-text-input">
+            <div class="container">
+              <img
+                class="section__divider"
+                src="../images/divider.svg"
+                alt="divider"
+              />
+              <h2 class="section__title" id="handling-text-input">
+                handling text input<sup class="title__chapter">Chapter 4</sup>
+              </h2>
+
+              <p class="section__paragraph">
+                TextInput is a Core Component that allows the user to enter
+                text. It has an onChangeText prop that takes a function to be
+                called every time the text changed, and an onSubmitEditing prop
+                that takes a function to be called when the text is submitted.
+              </p>
+              <p class="section__paragraph">
+                For example, let's say that as the user types, you're
+                translating their words into a different language. In this new
+                language, every single word is written the same way: 🍕. So the
+                sentence "Hello there Bob" would be translated as "🍕 🍕".
+              </p>
+            </div>
+          </section>
+        </article>
+      </div>
     </main>
   </body>
 </html>

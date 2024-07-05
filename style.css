@@ -38,6 +38,14 @@ code {
   background: rgba(218, 218, 218, 1);
 }
 
+.seo-pagetitle {
+  position: absolute;
+  clip-path: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .section {
   margin-bottom: 70px;
 }

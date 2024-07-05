@@ -27,6 +27,14 @@ li {
   list-style: none;
 }
 
+.seo-pagetitle {
+  position: absolute;
+  clip-path: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
 .section {
   margin-top: 70px;
   margin-bottom: 70px;
